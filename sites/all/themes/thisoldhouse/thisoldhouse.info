@@ -1,0 +1,50 @@
+name = thisoldhouse
+description = Theme for Thisoldhouse
+core = 7.x
+
+; STYLESHEETS
+;-------------------------------------------------------------------------------
+stylesheets[all][] = css/style.css
+; Note: removes system.menu.css so we don't have to overwrite styles.
+;stylesheets[all][] = system.menus.css
+stylesheets[all][] = css/toh-core.css
+; Remove flexslider.css
+;stylesheets[all][] = flexslider.css
+; Note: we are not using a separate print.css file because a print-
+; preview window is utilize. Printing uses the styles from the preview.
+
+; SCRIPTS
+;-------------------------------------------------------------------------------
+scripts[] = js/toh-load.js
+scripts[] = js/modernizr-2.5.3.js
+scripts[] = js/jquery_colorbox.js
+scripts[] = js/video-overlay.js
+
+; REGIONS
+;-------------------------------------------------------------------------------
+; Note: Sidebar Second intentionally removed.
+; Note: Required, hidden regions page_top and page_bottom are printed in html.tpl.php,
+; but, don't need to be specified in .info file.
+; Note: content_header declared in main theme, but not in mobile.
+; I'm not sure if this was intentional or not.
+regions[header_top] = Header Top
+regions[header] = Header
+regions[header_bottom] = Header Bottom
+regions[nav_main] = Navigation Main
+
+regions[highlighted] = Highlighted
+;regions[content_header] = Content Header
+regions[help] = Help
+
+;regions[content_top] = Content Top
+regions[content] = Content
+;regions[content_bottom] = Content Bottom
+regions[page_bottom] = Page Bottom
+
+regions[sidebar_first]  = Right Rail (Sidebar First)
+
+regions[footer] = Footer
+;regions[footer_top] = Footer Top
+;regions[footer_logo] = Footer Logo
+;regions[footer_middle] = Footer Middle
+;regions[footer_bottom] = Footer Bottom
